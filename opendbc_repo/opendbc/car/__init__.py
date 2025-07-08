@@ -201,13 +201,23 @@ def rate_limit(new_value, last_value, dw_step, up_step):
 
 def get_friction(lateral_accel_error: float, lateral_accel_deadzone: float, friction_threshold: float,
                  torque_params: structs.CarParams.LateralTorqueTuning, friction_compensation: bool) -> float:
-  friction_interp = np.interp(
-    apply_center_deadzone(lateral_accel_error, lateral_accel_deadzone),
-    [-friction_threshold, friction_threshold],
-    [-torque_params.friction, torque_params.friction]
-  )
-  friction = float(friction_interp) if friction_compensation else 0.0
-  return friction
+  if not friction_compensation:
+    return 0.0
+
+  # Apply center deadzone
+  error_with_deadzone = apply_center_deadzone(lateral_accel_error, lateral_accel_deadzone)
+
+  # Fast linear interpolation instead of np.interp
+  if error_with_deadzone <= -friction_threshold:
+    friction = -torque_params.friction
+  elif error_with_deadzone >= friction_threshold:
+    friction = torque_params.friction
+  else:
+    # Linear interpolation between -friction_threshold and friction_threshold
+    t = (error_with_deadzone + friction_threshold) / (2 * friction_threshold)
+    friction = -torque_params.friction + t * (2 * torque_params.friction)
+
+  return float(friction)
 
 
 def make_tester_present_msg(addr, bus, subaddr=None, suppress_response=False):
