@@ -23,34 +23,17 @@ class PIDController:
 
     self.reset()
 
-  def _fast_interp(self, speed, bp, v):
-    """Fast interpolation for simple cases"""
-    if len(bp) == 1:
-      return v[0]
-    elif len(bp) == 2:
-      if speed <= bp[0]:
-        return v[0]
-      elif speed >= bp[1]:
-        return v[1]
-      else:
-        # Linear interpolation
-        t = (speed - bp[0]) / (bp[1] - bp[0])
-        return v[0] + t * (v[1] - v[0])
-    else:
-      # Fall back to numpy for complex cases
-      return np.interp(speed, bp, v)
-
   @property
   def k_p(self):
-    return self._fast_interp(self.speed, self._k_p[0], self._k_p[1])
+    return np.interp(self.speed, self._k_p[0], self._k_p[1])
 
   @property
   def k_i(self):
-    return self._fast_interp(self.speed, self._k_i[0], self._k_i[1])
+    return np.interp(self.speed, self._k_i[0], self._k_i[1])
 
   @property
   def k_d(self):
-    return self._fast_interp(self.speed, self._k_d[0], self._k_d[1])
+    return np.interp(self.speed, self._k_d[0], self._k_d[1])
 
   @property
   def error_integral(self):
