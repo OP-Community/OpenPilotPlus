@@ -97,7 +97,7 @@ NO WARRANTY EXPRESSED OR IMPLIED.**
 <details>
 <summary>User Data and comma Account</summary>
 
-By default, openpilot uploads the driving data to our servers. You can also access your data through [comma connect](https://connect.comma.ai/). We use your data to train better models and improve openpilot for everyone.
+By default, openpilot uploads the driving data to our servers. You can also access your data through [comma connect](https://stable.konik.ai/). We use your data to train better models and improve openpilot for everyone.
 
 openpilot is open source software: the user is free to disable data collection if they wish to do so.
 

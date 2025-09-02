@@ -287,8 +287,8 @@
         <translation>Überprüfen</translation>
     </message>
     <message>
-        <source>Pair your device with comma connect (connect.comma.ai) and claim your comma prime offer.</source>
-        <translation>Koppele dein Gerät mit Comma Connect (connect.comma.ai) und sichere dir dein Comma Prime Angebot.</translation>
+        <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
+        <translation>Koppele dein Gerät mit Comma Connect (stable.konik.ai) und sichere dir dein Comma Prime Angebot.</translation>
     </message>
     <message>
         <source>Pair Device</source>
@@ -548,16 +548,16 @@ Der Firehose-Modus ermöglicht es dir, deine Trainingsdaten-Uploads zu maximiere
         <translation>Verbinde dein Gerät mit deinem comma Konto</translation>
     </message>
     <message>
-        <source>Go to https://connect.comma.ai on your phone</source>
-        <translation>Gehe zu https://connect.comma.ai auf deinem Handy</translation>
+        <source>Go to https://stable.konik.ai on your phone</source>
+        <translation>Gehe zu https://stable.konik.ai auf deinem Handy</translation>
     </message>
     <message>
         <source>Click &quot;add new device&quot; and scan the QR code on the right</source>
         <translation>Klicke auf &quot;neues Gerät hinzufügen&quot; und scanne den QR code rechts</translation>
     </message>
     <message>
-        <source>Bookmark connect.comma.ai to your home screen to use it like an app</source>
-        <translation>Füge connect.comma.ai als Lesezeichen auf deinem Homescreen hinzu um es wie eine App zu verwenden</translation>
+        <source>Bookmark stable.konik.ai to your home screen to use it like an app</source>
+        <translation>Füge stable.konik.ai als Lesezeichen auf deinem Homescreen hinzu um es wie eine App zu verwenden</translation>
     </message>
     <message>
         <source>Please connect to Wi-Fi to complete initial pairing</source>
@@ -582,8 +582,8 @@ Der Firehose-Modus ermöglicht es dir, deine Trainingsdaten-Uploads zu maximiere
         <translation>Jetzt abonieren</translation>
     </message>
     <message>
-        <source>Become a comma prime member at connect.comma.ai</source>
-        <translation>Werde Comma Prime Mitglied auf connect.comma.ai</translation>
+        <source>Become a comma prime member at stable.konik.ai</source>
+        <translation>Werde Comma Prime Mitglied auf stable.konik.ai</translation>
     </message>
     <message>
         <source>PRIME FEATURES:</source>
@@ -687,8 +687,8 @@ Der Firehose-Modus ermöglicht es dir, deine Trainingsdaten-Uploads zu maximiere
         <translation>Einrichtung beenden</translation>
     </message>
     <message>
-        <source>Pair your device with comma connect (connect.comma.ai) and claim your comma prime offer.</source>
-        <translation>Koppele dein Gerät mit Comma Connect (connect.comma.ai) und sichere dir dein Comma Prime Angebot.</translation>
+        <source>Pair your device with comma connect (stable.konik.ai) and claim your comma prime offer.</source>
+        <translation>Koppele dein Gerät mit Comma Connect (stable.konik.ai) und sichere dir dein Comma Prime Angebot.</translation>
     </message>
     <message>
         <source>Pair device</source>
